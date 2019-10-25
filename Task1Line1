@@ -1,0 +1,9 @@
+public class Task1Line1 {
+    public static void main(String[] args) {
+        float a = 20;
+        float b = 11;
+        float c = 15;
+        float z = ((a - 3) * b / 2) + c;
+        System.out.println("при а="+a+", b="+b+" c="+c+",\nz="+z);
+    }
+}
