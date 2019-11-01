@@ -1,0 +1,11 @@
+public class Task1Line4 {
+    public static void main(String[] args) {
+        double r = 123.456;  //nnn.ddd
+        short nnn = (short) r;
+        short ddd = (short) (r*1000%1000);
+        System.out.println(ddd + "." + nnn);
+        double n = nnn;
+        r = ddd + (n/1000);
+        System.out.println(r);
+    }
+}
