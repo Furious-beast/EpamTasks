@@ -1,0 +1,10 @@
+public class Task1Line5 {
+    public static void main(String[] args) {
+        long t = 3665; // дано секунд
+        short h, m, s;
+        h = (short) (t/3600);
+        m = (short) (t/60%60);
+        s = (short) (t%60);
+        System.out.format("%02dч %02dмин %02dc", h, m, s);
+    }
+}
