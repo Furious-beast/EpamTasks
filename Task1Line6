@@ -1,0 +1,18 @@
+public class Task1Line6 {
+    public static void main(String[] args) {
+        float x, y;
+        boolean z;
+        x = 3; // Координата Х
+        y = 2; // Координата Y
+        if (x >= -4 & x <= 4 & y >= -3 & y <= 0) {
+            z = true;
+        } else {
+            if (x >= -2 & x <= 2 & y >= 0 & y <= 4) {
+                z = true;
+            } else {
+                z = false;
+            }
+        }
+        System.out.println(z);
+    }
+}
