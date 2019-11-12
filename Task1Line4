@@ -1,5 +1,9 @@
 public class Task1Line4 {
     public static void main(String[] args) {
+
+        //Дано действительное число R, вида nnn.ddd.
+        //Поменять местами целую и дробную части и вывести полученное значение числа.
+
         double r = 123.456;  //nnn.ddd
         short nnn = (short) r;
         short ddd = (short) (r*1000%1000);
