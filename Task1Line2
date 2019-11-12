@@ -1,5 +1,8 @@
 public class Task1Line2 {
     public static void main(String[] args) {
+
+       //Вычислить значение выражения 
+
         double a = 2;
         double b = 25;
         double c = 1;
