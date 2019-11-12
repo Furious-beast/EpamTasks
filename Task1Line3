@@ -1,8 +1,11 @@
 public class Task1Line3 {
     public static void main(String[] args) {
+
+        //Вычислить значение выражения: (sin(x) + cos(y)) / (cos(x) - sin(y))*tg(x*y)
+
         double x = 2;
         double y = 25;
-        double z = (Math.sin(x)+Math.cos(y))/(Math.cos(x)+Math.sin(y))*Math.tan(x*y);
+        double z = (Math.sin(x)+Math.cos(y))/(Math.cos(x)-Math.sin(y))*Math.tan(x*y);
         System.out.println("при x="+x+", y="+y+",\nz="+z);
     }
 }
