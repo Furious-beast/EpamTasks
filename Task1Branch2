@@ -1,0 +1,16 @@
+public class Task1Branch2 {
+    public static void main(String[] args) {
+
+        // Найти max{min(a,b), min(c,d)}
+
+        int a=5;
+        int b=8;
+        int c=-2;
+        int d=11;
+        int res, res1;
+        res=Math.min(a,b);
+        res1=Math.min(c,d);
+        res=Math.max(res,res1);
+        System.out.println(res);
+    }
+}
