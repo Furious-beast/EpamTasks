@@ -1,0 +1,24 @@
+public class Task1Branch4 {
+    public static void main(String[] args) {
+
+        //Заданы размеры А, В прямоугольного отверстия.
+        //Определить пройдет ли через отверстие кирпич размером x, y, z.
+
+        int a=2; int b=4;           //Размеры отверстия
+        int x=5; int y=1; int z=3;  //Размеры кирпича
+        
+        if (Math.max(a,b)>=Math.max(x,y)&Math.min(a,b)>=Math.min(x,y)){
+            System.out.println("Кирпич пройдет стороной x*y");
+        } else {
+            if (Math.max(a,b)>=Math.max(x,z)&Math.min(a,b)>=Math.min(x,z)){
+                System.out.println("Кирпич пройдет стороной x*z");
+            } else {
+                if (Math.max(a,b)>=Math.max(y,z)&Math.min(a,b)>=Math.min(y,z)) {
+                    System.out.println("Кирпич пройдет стороной y*z");
+                } else {
+                    System.out.println("Кирпич НЕ пройдет в это отверстие!");
+                }
+            }
+        }
+    }
+}
