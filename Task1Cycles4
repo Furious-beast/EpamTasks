@@ -1,0 +1,14 @@
+public class Task1Cycles4 {
+    public static void main(String[] args) {
+
+        //Составить программу нахождения произведения квадратов первых 200 чисел
+
+        int n=200;
+        long res=1;
+        
+        for (int i=2; i<=n; i++){
+            res= (long) (res*Math.pow(i,2));
+        }
+        System.out.println("Результат "+res);
+    }
+}
