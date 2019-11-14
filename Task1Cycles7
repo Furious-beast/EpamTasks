@@ -1,0 +1,28 @@
+public class Task1Cycles7 {
+    public static void main(String[] args) {
+
+        //Для каждого натурального числа в промежутке от m до n вывести все делители, кроме 1 и самого числа.
+        //m и n вводятся с клавиатуры
+
+        int m=1;    //Дано
+        int n=9;
+
+        if (m>n){
+            System.out.println("m должно быть меньше либо равным n");
+        } else{
+            if (m<=0){
+                System.out.println("m и n должны быть больше 0");
+            }else{
+                for (int i=m; i<=n; i++){
+                    System.out.print("Число "+i+" делится на: ");
+                    for (int j=2; j<i; j++){
+                        if (i%j==0){
+                            System.out.print(j+"\t");
+                        }
+                    }
+                    System.out.print("\n");
+                }
+            }
+        }
+    }
+}
