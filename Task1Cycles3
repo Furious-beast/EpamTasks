@@ -1,0 +1,15 @@
+public class Task1Cycles3 {
+    public static void main(String[] args) {
+
+        //Найти сумму квадратов первых ста чисел
+
+        int n=100;
+        long res=0;
+
+        for (int i=1; i<=n; i++){
+            res= (long) (res+Math.pow(i,2));
+        }
+        //res=n*(n+1)*(2*n+1)/6;   альтернативное решение, но тема циклы))
+        System.out.println("Результат "+res);
+    }
+}
