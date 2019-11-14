@@ -1,0 +1,18 @@
+public class Task1Cycles1 {
+    public static void main(String[] args) {
+
+        //Напишите программу, где пользователь вводит любое целое положительное число,
+        //а программа суммирует все числа от 1 до введенного пользователем числа
+
+        int x=5; //Дано
+
+        long res=0;
+        int i=x-1;
+
+        do {
+            res=res+i;
+            i--;
+        } while (i>0);
+        System.out.println("Сумма всех чисел от 1 до "+x+" равна "+res);
+    }
+}
