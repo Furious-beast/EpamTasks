@@ -1,0 +1,25 @@
+public class Task1Cycles5  {
+    public static void main(String[] args) {
+
+        //Даны числовой ряд и некоторое число е.
+        //Найти сумму тех членов ряда, модуль которых больше или равен е.
+
+        double e=0.2;   //Дано
+
+        double res=0;
+        double res1;
+        int i=1;
+        if (e>=0) {
+            do {
+                res1 = 1 / Math.pow(2, i) + 1 / Math.pow(3, i);
+                i++;
+                if (res1 >= e) {
+                    res = res + res1;
+                }
+            } while (res1 > e);
+            System.out.println("Результат " + res);
+        } else {
+            System.out.println("При отрицательном е, сумма бесконечна");
+        }
+    }
+}
