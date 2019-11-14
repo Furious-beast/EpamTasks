@@ -1,0 +1,24 @@
+public class Task1Cycles2 {
+    public static void main(String[] args) {
+
+        //Вычислить значения функции на отрезке [a,b] с шагом h
+
+        int a=-5;   //Дано
+        int b=5;
+        int h=5;
+
+        int y;
+        if (a>=b||h<=0){                                      //Проверка данных
+            System.out.println("Недопустимые входные данные");
+        }else {
+            for (int i=a; i<=b; i=i+h) {
+                if (i > 2) {
+                    y = i;
+                } else {
+                    y = -i;
+                }
+                System.out.println("Для х=" + i + " y=" + y);
+            }
+        }
+    }
+}
