@@ -1,0 +1,29 @@
+public class Task1Cycles8 {
+    public static void main(String[] args) {
+
+        //Даны два числа. Определить цифры, входящие в запись как первого, так и второго числа.
+
+        double a=1253.456;   //Дано
+        double b=-25.98765;
+
+        a=Math.abs(a);      //Избавляемся от возможного символа "минус"
+        b=Math.abs(b);
+
+        String str1= Double.toString(a);    //Преобразуем в строчный вид
+        String str2= Double.toString(b);
+
+        System.out.print("Цифры, входящие в запись как первого, так и второго числа:");
+        for (int i=0; i<str1.length(); i++){
+            if (str1.charAt(i)=='.'){           //пропуск итерации, если точка
+                continue;
+            }
+            for (int j=0; j<str2.length(); j++){
+                if (str1.charAt(i)==str2.charAt(j)){
+                    System.out.print(" "+str2.charAt(j));
+                    str1=str1.replace(str1.charAt(i),'.'); //Заменяем все такие же цифры на "точку", чтобы исключить дублирование в ответе
+                    break;
+                }
+            }
+        }
+    }
+}
